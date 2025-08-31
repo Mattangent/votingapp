@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api/polls")
 public class PollController {
-    private PollService pollService;
+    private final PollService pollService;
 
     public PollController(PollService pollService) {
         this.pollService = pollService;
